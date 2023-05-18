@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Online sklep z ubraniami</title>
+	<style>
+		/* Styling for the page */
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			background-color: #f2f2f2; /* Light Grey Background */
+		}
+
+		.page-container {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			padding: 50px;
+		}
+
+		.page-title {
+			font-size: 32px;
+			margin-bottom: 10px;
+		}
+
+		.page-subtitle {
+			font-size: 18px;
+			margin-bottom: 40px;
+		}
+
+		.section {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+			padding: 40px 0;
+		}
+
+		.button {
+			display: inline-block;
+			padding: 10px 20px;
+			background-color: #ff9900;
+			color: #fff;
+			font-size: 18px;
+			text-decoration: none;
+			border-radius: 5px;
+			margin-top: 20px;
+		}
+
+		.product {
+			margin-bottom: 30px;
+		}
+
+		.picture {
+			max-width: 200px;
+			margin-bottom: 10px;
+		}
+
+		.video-container {
+			position: relative;
+			padding-bottom: 56.25%;
+			padding-top: 30px;
+			height: 0;
+			overflow: hidden;
+		}
+
+		.video-container iframe,
+		.video-container object,
+		.video-container embed {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+		.form {
+			max-width: 400px;
+			margin: 0 auto;
+		}
+
+		.form input,
+		.form textarea,
+		.form button {
+			display: block;
+			width: 100%;
+			margin-bottom: 10px;
+			padding: 5px;
+		}
+
+		.form button {
+			padding: 10px;
+			background-color: #ff9900;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<div class="page-container">
+		<h1 class="page-title">Online Sklep z ubraniami</h1>
+		<h2 class="page-subtitle">Odkryj najnowsze krzyki mody</h2>
+
+		<section class="section">
+			<h3>Poznaj naszą nową kolekcję</h3>
+			<p>Znajdź modne stylizacje</p>
+			<a href="#details" class="button">Zobacz więcej</a>
+		</section>
+
+		<section id="details" class="section">
+			<h3>Popularne produkty</h3>
+			<div class="product">
+				<h4>MONTEGO</h4>
+				<p>Sweter</p>
+				<img class="picture" src="https://img.fidcdn.net/r17/product/montego-bluza-w-paski-lawendowy-pl_1719976,66d50b,450x600.webp" alt="Product 1">
+				<a href="https://link-to-product-1" target="_blank">Szczegóły</a>
+			</div>
+			<div class="product">
+				<h4>
+CHRISTIAN BERG COCKTAIL</h4>
+				<p>Sukienka</p>
+				<img class="picture" src="https://img.fidcdn.net/r17/product/christian-berg-cocktail-sukienka-wieczorowa-z-obszyciem-cekinami-niebieski-pl_1717359,b0febf,450x600.webp" alt="Product 2">
+				<a href="https://link-to-product-2" target="_blank">Szczegóły</a>
+			</div>
+		</section>
+
+        	<section class="section">
+		<div>
+			<h3>Odkryj zalety naszych produktów</h3>
+			<div class="video-container">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nIN0we7IzXc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+			</div>
+		</div>
+	</section>
+
+		<section class="section">
+			<h3>Formularz konaktowy</h3>
+			<form class="form">
+				<input type="text" name="Imię i nazwisko" placeholder="Imię i nazwisko" required>
+				<input type="tel" name="Telefon" placeholder="Telefon" required>
+				<textarea name="Treść" placeholder="Treść" required></textarea>
+				<button type="submit">Wyślij</button>
+			</form>
+		</section>
+	</div>
+</body>
+</html>
